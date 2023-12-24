@@ -4,6 +4,7 @@ from swapper.image_swapper import *
 import insightface
 from insightface.app import FaceAnalysis
 from firebase_utils import *
+import uvicorn
 
 app = Flask(__name__)
 
@@ -47,7 +48,7 @@ def home():
             })
     
     return jsonify({
-        "error": "Please provide proper format"
+        "success": "Hello there"
     })
 
 
@@ -62,6 +63,5 @@ def save_image_in_storage(bytes, data):
         return None
     
 
-
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=False, port=5000)
