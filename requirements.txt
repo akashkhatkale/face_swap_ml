@@ -16,3 +16,4 @@ flask
 replicate
 pyrebase4
 gunicorn
+requests
