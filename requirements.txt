@@ -14,3 +14,4 @@ timm
 torch
 flask
 replicate
+pyrebase4
