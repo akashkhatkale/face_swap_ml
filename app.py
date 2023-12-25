@@ -76,4 +76,4 @@ def save_image_in_storage(bytes, data):
     
 
 if __name__ == "__main__":
-    app.run(debug=False, port=5000)
+    app.run(debug=False, port=8000)
